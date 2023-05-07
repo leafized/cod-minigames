@@ -26,6 +26,7 @@ onPlayerConnect()
     {
         level waittill("connected", player);
         player thread onPlayerSpawned();
+        player IPrintLn( "welcome to mini games, please wait while host chooses a mode." );
     }
 }
 
@@ -39,17 +40,10 @@ onPlayerSpawned()
         if(isDefined(self.playerSpawned))
             continue;
         self.playerSpawned = true;
-        self freezeControls(false);
+        self freezeControls(false);//release player from frozen movement in the event that a movement mode is required.
         
-        // Will appear each time when the player spawns, that's just an example.
-        self iprintln(RED + BUILD);
-        self iprintln(WELCOME_MSG);
-        self iprintln(GetBundleMessage());
-    
-        //Your code goes here...Good Luck!
+        self thread _start_uno_minigame();
+        
     }
 }
 
-#ifndef MW2 && MW3
-GetBundleMessage = () => return "Hello from main.gsc";
-#endif

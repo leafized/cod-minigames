@@ -13,5 +13,12 @@
 
 _start_uno_minigame()
 {
-    //initilization here.
+    uno        = [];
+    uno.pcount = getPlayers().size;
+    foreach( player in level.players )
+    {
+        player thread _uno_initialize_interface();
+        player iprintln(uno.pcount);
+    }
+   
 }

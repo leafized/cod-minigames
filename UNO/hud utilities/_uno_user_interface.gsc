@@ -13,10 +13,12 @@
 
 _uno_initialize_interface()
 {
-   
+   self _uno_initialize_dashboard();
 }
 
 _uno_initialize_dashboard()
 {
-    self.Uno.Background[0] = self createRectangle(align,relative,x,y,width,height,color,1,0,"white",false);
+    self.Uno            = [];
+    self.Uno.Background = createRectangle("CENTER", "CENTER",0,0,600,400,grey,1,0,"white",false);
+    
 }

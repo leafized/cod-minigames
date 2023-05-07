@@ -15,10 +15,15 @@
     
    //#define colorname = (r,g,b); 
     
+#define black = (0,0,0);
+#define grey = (.25,.25,.25);
 #define white = (1,1,1);
 #define red = (1,0,0);
 #define orange = (1,.5,0);
 #define yellow = (1,1,0);
 #define green = (0,1,0);
-#define blue = (0,0,1);    
+#define blue = (0,0,1);   
+#define indigo = (.3, 0, .7);
+#define violet = (1, 0, .7);
+
 #endregion

@@ -231,7 +231,6 @@ setPoint(point,relativePoint,xOffset,yOffset,moveTime)
         case "bar": setPointBar(point,relativePoint,xOffset,yOffset);
         break;
     }
-    self updateChildren();
 }
 
 //Some useful functions below to help get you started
