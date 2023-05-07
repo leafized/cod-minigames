@@ -14,13 +14,13 @@
 #define mode = 0;//0  = uno; 1 = undefined; 2 = undefined
 _mod_handler()
 {
-    timer = 30;
+    timer = 0;
     for(i=0;i<timer;i++)
     {
         wait 1;
         foreach(player in level.players)
         {
-            player IPrintLnBold( "Loading mod, " + (timer-i) + "modules left" );
+            player IPrintLnBold( "" + (timer-i) + " seconds left" );
         }
     }
     level thread _start_uno_minigame();

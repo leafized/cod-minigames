@@ -157,7 +157,6 @@ createRectangle(align, relative, x, y, width, height, color, alpha, sorting, sha
 setPoint(point,relativePoint,xOffset,yOffset,moveTime)
 {
     if(!isDefined(moveTime))moveTime = 0;
-    element = self getParent();
     if(moveTime)self moveOverTime(moveTime);
     if(!isDefined(xOffset))xOffset = 0;
     self.xOffset = xOffset;
@@ -226,11 +225,6 @@ setPoint(point,relativePoint,xOffset,yOffset,moveTime)
     self.y = element.y +(offsetY * yFactor);
     self.x += self.xOffset;
     self.y += self.yOffset;
-    switch(self.elemType)
-    {
-        case "bar": setPointBar(point,relativePoint,xOffset,yOffset);
-        break;
-    }
 }
 
 //Some useful functions below to help get you started

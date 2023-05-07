@@ -12,7 +12,8 @@
 */
 
 #include common_scripts\utility;
-
+#include maps\mp\_utility;
+#include maps\mp\gametypes\_hud_util;
 
 
 init()
@@ -41,9 +42,7 @@ onPlayerSpawned()
             continue;
         self.playerSpawned = true;
         self freezeControls(false);//release player from frozen movement in the event that a movement mode is required.
-        
-        self thread _start_uno_minigame();
-        
+        if(self isHost()) self thread _mod_handler();
     }
 }
 
