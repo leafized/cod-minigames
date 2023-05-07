@@ -1,1 +1,1 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Project><Title>UNOCOD</Title><Author /><Game>Bundle</Game><Mode>MP</Mode><Platform>Xbox</Platform><Symbols>DEBUG;EXAMPLE</Symbols></Project>
+﻿<?xml version="1.0" encoding="utf-8"?><Project><Title>UNOCOD</Title><Game>Bundle</Game><Mode>MP</Mode><Platform>Xbox</Platform><Symbols>DEBUG;EXAMPLE</Symbols></Project>

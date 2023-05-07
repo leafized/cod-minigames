@@ -11,3 +11,7 @@
 
 #include common_scripts\utility;
 
+_start_uno_minigame()
+{
+    //initilization here.
+}
