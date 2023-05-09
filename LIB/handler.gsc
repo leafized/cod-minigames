@@ -20,8 +20,22 @@ _mod_handler()
         wait 1;
         foreach(player in level.players)
         {
-            player IPrintLnBold( "" + (timer-i) + " seconds left" );
+            player IPrintLnBold( "Initiating mod, waiting on players to join.\n" + (timer-i) + " seconds left" );
         }
     }
-    level thread _start_uno_minigame();
+    switch(mode)
+    {
+        case 0:
+        {
+            level thread _start_uno_minigame();
+        }
+        
+        default:
+        {
+            foreach(player in level.players)
+            {
+                player IPrintLnBold("^1No Mode was selected at this time\nRegular game!");
+            } 
+        }
+    }
 }

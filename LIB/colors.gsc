@@ -25,5 +25,6 @@
 #define blue = (0,0,1);   
 #define indigo = (.3, 0, .7);
 #define violet = (1, 0, .7);
+#define candyblue = (.1, .4, 1);
 
 #endregion

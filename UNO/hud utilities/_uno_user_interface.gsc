@@ -24,8 +24,3 @@ _uno_initialize_dashboard()
     self.Uno.Infobar    = createRectangle("CENTER", "CENTER", -200,0,180, 330, indigo, 1, 2, "white", false);
     self.Uno.InfoText   = createText("console",1.5,"LEFT","CENTER",-280,-160,3,white,1,0,0,create_line("Welcome to cod-minigames|Current Mode: UNO|^4Player 1:|^3Player 2|^2Player 3|^1Player 4||||Thank you for playing!"));
 }
-
-doit()
-{
-    
-}
